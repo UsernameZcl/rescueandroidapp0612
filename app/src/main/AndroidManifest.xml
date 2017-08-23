@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.rescueandroidapp">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <!--添加可以向外拨打电话的权限  -->
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <!--判断网络连接状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+
+
+    <application
+        android:name="com.rescueandroid.utils.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- AutoLayout设计尺寸 -->
+        <meta-data
+            android:name="design_width"
+            android:value="768" />
+        <meta-data
+            android:name="design_height"
+            android:value="1280" />
+        <activity
+            android:name="com.example.rescueandroidapp.Framgment.LaunchActivity"
+            android:theme="@style/LaunchActivityAppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--主窗体框架-->
+        <activity android:name="com.example.rescueandroidapp.Framgment.MainFrameActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--发布货源-->
+        <activity android:name=".Framgment.ReleaseFragment.find_car_activity.Release_Car_Supply_Activity"
+                  android:screenOrientation="portrait"
+
+                  android:theme="@style/AppTheme" />
+        <!--选择始发地信息-->
+        <activity android:name=".Framgment.ReleaseFragment.find_car_activity.Details_of_Origin_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--发布找车页面-->
+        <activity android:name=".Framgment.ReleaseFragment.find_car_activity.My_release_Activity"
+
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--发布界面中找库货源的界面-->
+
+        <activity android:name=".Framgment.ReleaseFragment.find_source_activity.Source_Finding_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--找路线的界面-->
+        <activity android:name=".Framgment.ReleaseFragment.find_route_activity.Find_Route_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--线路发布的布局-->
+
+        <activity android:name=".Framgment.ReleaseFragment.find_route_activity.Route_Release_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+
+        <!--登录-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.LoginActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--注册-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.RegisterActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--忘记密码-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.Forget_password_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--用户协议-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.User_information_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--设置-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.Set_up_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--关于马甲-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.AboutActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--用户信息-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.User_information"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--修该密码-->
+        <activity android:name=".Framgment.PersonalCenterFragment.activity.ChangePwd"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--找路线-->
+        <activity android:name=".Framgment.HomePagerFragment.activity.FindrouteActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--找库-->
+        <activity android:name=".Framgment.HomePagerFragment.activity.FindwarehouseActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+        <!--我的路线-->
+        <activity android:name=".Framgment.HomePagerFragment.activity.MyrouteActivity"
+
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+
+        <!--我的仓库-->
+        <activity android:name=".Framgment.HomePagerFragment.activity.MyhouseAcitivity"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+        <!--找库详情-->
+        <activity android:name=".Framgment.HomePagerFragment.activity.FindwarehouseDetails"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <!--找库的发布界面-->
+        <activity android:name=".Framgment.ReleaseFragment.find_source_activity.Source_Release_Activity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme" />
+
+        <!--加入的界面-->
+        <activity
+            android:name=".Framgment.OrderFragment.activity.MyOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Framgment.OrderFragment.activity.MyGrabOrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Framgment.OrderFragment.activity.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Framgment.OrderFragment.activity.SelectPayStateDialog"
+
+            android:theme="@style/AppThemeDialog" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Framgment.OrderFragment.activity.OrderGrabDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <!--找库详情页的加载-->
+        <activity android:name=".Framgment.ReleaseFragment.find_source_activity.Details_Page_Activity"></activity>
+        <!--找车货源的详情-->
+        <activity android:name=".Framgment.ReleaseFragment.find_car_activity.Car_Details_Page_Activity"></activity>
+    </application>
+
+
+</manifest>

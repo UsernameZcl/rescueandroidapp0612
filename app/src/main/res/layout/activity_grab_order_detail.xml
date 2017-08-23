@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normalBgColor"
+    tools:context=".Framgment.OrderFragment.activity.OrderGrabDetailActivity">
+
+    <FrameLayout
+        android:id="@+id/order_detail_fl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionHeight"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/order_detail_back"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="订单详情"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/order_detail_fl2"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/normalBgColor">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="top"
+            android:background="@color/normalLineColor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="90px"
+            android:text="电话联系"
+            android:textColor="#c14700"
+            android:textSize="40px" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/order_detail_change_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20px"
+            android:background="@drawable/my_order_spinner_bg"
+            android:paddingBottom="15px"
+            android:paddingLeft="50px"
+            android:paddingRight="50px"
+            android:paddingTop="15px"
+            android:text="修改价格"
+            android:textColor="@color/colorFocusTrue"
+            android:textSize="30px" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_detail_fl1"
+        android:layout_above="@+id/order_detail_fl2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/view_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divide"
+            android:orientation="vertical"
+            android:showDividers="middle"/>
+    </ScrollView>
+
+</RelativeLayout>

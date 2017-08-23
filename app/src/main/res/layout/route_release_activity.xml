@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/banner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/route_release_activity_iv1"
+            android:layout_width="50dp"
+            android:layout_gravity="left|center"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/left"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="线路管理"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+           <LinearLayout
+               android:id="@+id/route_release_activity_lv1"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#ffffff"
+               android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

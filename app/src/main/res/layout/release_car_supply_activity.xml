@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5716da">
+
+        <ImageView
+            android:id="@+id/selease_car_supply_activity_iv1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:src="@mipmap/left"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布货源-找车"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+
+        <TextView
+
+            android:id="@+id/selease_car_supply_activity_tv1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="我的发布"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+    </FrameLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eee"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/selease_car_supply_activity_linlay1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="货源信息"
+                            android:textSize="18dp"/>
+
+                        <ImageView
+                            android:id="@+id/selease_car_supply_activity_iv2"
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+
+                            android:src="@mipmap/low"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/selease_car_supply_activity_linlay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="始发地"
+                                android:textSize="18dp"/>
+
+                            <EditText
+
+                                android:id="@+id/selease_car_supply_activity_et1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:hint="请选择"
+                                android:maxLines="1"
+                                android:padding="6dp"
+                                android:singleLine="true"
+                                android:textSize="18dp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/right"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eee"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="目的地"
+                                android:textSize="18dp"/>
+
+
+                            <EditText
+                                android:id="@+id/selease_car_supply_activity_et2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:hint="请选择"
+                                android:padding="6dp"
+                                android:singleLine="true"
+                                android:textSize="18dp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/right"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eee"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="货物名称"
+                                android:textSize="18dp"/>
+
+                            <EditText
+                                android:id="@+id/selease_car_supply_activity_et3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:hint="请输入"
+                                android:padding="6dp"
+                                android:singleLine="true"
+                                android:textSize="18dp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/right"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eee"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="货物品类"
+                                android:textSize="18dp"/>
+
+                            <EditText
+                                android:id="@+id/selease_car_supply_activity_et4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:hint="请选择"
+                                android:padding="6dp"
+                                android:singleLine="true"
+                                android:textSize="18dp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/right"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eee"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="货物类型"
+                                android:textSize="18dp"/>
+
+                            <EditText
+                                android:id="@+id/selease_car_supply_activity_et5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:editable="false"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:hint="请选择"
+                                android:padding="6dp"
+                                android:singleLine="true"
+                                android:textSize="18dp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/right"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eee"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center|left"
+                                android:text="货物规格"
+                                android:textSize="18dp"/>
+
+                            <EditText
+                                android:id="@+id/selease_car_supply_activity_et6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:ellipsize="end"
+                                android:hint="请输入"
+                                android:inputType="number|numberDecimal"
+                                android:padding="6dp"
+                                android:singleLine="true"
+                                android:textSize="18dp"/>
+
+                            <RadioGroup
+                                android:id="@+id/selease_car_supply_activity_RG1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="20dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/selease_car_supply_activity_rg1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:checked="true"
+                                    android:gravity="center"
+                                    android:text="吨"
+                                    android:textSize="12sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/selease_car_supply_activity_rg2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="方"
+                                    android:textSize="12sp"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#9b9f9f"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/selease_car_supply_activity_linlay3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="#eee"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:text="车辆要求"
+                                android:textSize="18dp"/>
+
+                            <ImageView
+                                android:id="@+id/selease_car_supply_activity_iv3"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:src="@mipmap/low"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/selease_car_supply_activity_linlay4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center|left"
+                                    android:text="需要车长"
+                                    android:textSize="18dp"/>
+
+                                <EditText
+                                    android:id="@+id/selease_car_supply_activity_et7"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:editable="false"
+                                    android:ellipsize="end"
+                                    android:focusable="false"
+                                    android:hint="请选择"
+                                    android:padding="6dp"
+                                    android:singleLine="true"
+                                    android:textSize="18dp"/>
+
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@mipmap/right"/>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#eee"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal"
+                                >
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center|left"
+                                    android:text="需要类型"
+                                    android:textSize="18dp"/>
+
+                                <EditText
+                                    android:id="@+id/selease_car_supply_activity_et8"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:editable="false"
+                                    android:ellipsize="end"
+                                    android:focusable="false"
+                                    android:hint="请选择"
+                                    android:padding="6dp"
+                                    android:singleLine="true"
+                                    android:textSize="18dp"/>
+
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@mipmap/right"/>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#eee"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center|left"
+                                    android:text="需要温度"
+                                    android:textSize="18dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:orientation="horizontal"
+                                        >
+
+                                        <EditText
+                                            android:id="@+id/selease_car_supply_activity_et9"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="6dp"
+                                            android:layout_weight="1"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+                                            android:hint="最低-50℃"
+                                            android:padding="6dp"
+                                            android:singleLine="true"
+                                            android:textSize="18dp"/>
+
+
+                                        <TextView
+
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="10dp"
+                                            android:gravity="center"
+                                            android:text="℃"/>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#eee"></View>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:orientation="horizontal"
+                                        >
+
+                                        <EditText
+                                            android:id="@+id/selease_car_supply_activity_et10"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="6dp"
+                                            android:layout_weight="1"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+                                            android:hint="最高50℃"
+                                            android:padding="6dp"
+                                            android:singleLine="true"
+                                            android:textSize="18dp"/>
+
+                                        <TextView
+
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="10dp"
+                                            android:gravity="center"
+                                            android:text="℃"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#eee"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center|left"
+                                    android:text="装车时间"
+                                    android:textSize="18dp"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="6dp"
+                                        android:orientation="horizontal"
+                                        >
+
+                                        <EditText
+                                            android:id="@+id/selease_car_supply_activity_et11"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+
+                                            android:background="@null"
+
+                                            android:editable="false"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+                                            android:hint="选择最早装车时间"
+                                            android:padding="6dp"
+                                            android:singleLine="true"
+                                            android:textSize="18dp"/>
+
+
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="10dp"
+                                            android:src="@mipmap/right"/>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#eee"></View>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:orientation="horizontal"
+                                        >
+
+                                        <EditText
+                                            android:id="@+id/selease_car_supply_activity_et12"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="6dp"
+                                            android:layout_weight="1"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+                                            android:hint="选择最晚装车时间"
+                                            android:padding="6dp"
+                                            android:singleLine="true"
+                                            android:textSize="18dp"/>
+
+
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="10dp"
+                                            android:src="@mipmap/right"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#eee"></View>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#eee"></View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="到货时间"
+                                    android:textSize="18dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/selease_car_supply_activity_et13"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="6dp"
+                                            android:layout_weight="1"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+
+                                            android:hint="选择最早到货时间"
+                                            android:padding="6dp"
+                                            android:singleLine="true"
+                                            android:textSize="18dp"/>
+
+
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="10dp"
+                                            android:src="@mipmap/right"/>
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="#eee"></View>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/selease_car_supply_activity_et14"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="6dp"
+                                            android:layout_weight="1"
+                                            android:background="@null"
+                                            android:editable="false"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+                                            android:hint="选择最晚到货时间"
+                                            android:padding="6dp"
+                                            android:singleLine="true"
+                                            android:textSize="18dp"/>
+
+
+                                        <ImageView
+                                            android:id="@+id/imageView"
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="10dp"
+                                            android:src="@mipmap/right"/>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#9b9f9f"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/selease_car_supply_activity_linlay5"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="费用相关"
+                                    android:textSize="18dp"/>
+
+                                <ImageView
+                                    android:id="@+id/selease_car_supply_activity_iv4"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@mipmap/low"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/selease_car_supply_activity_linlay6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                >
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="6dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="运输费用"
+                                        android:textSize="18dp"/>
+
+                                    <RadioGroup
+                                        android:id="@+id/selease_car_supply_activity_RG2"
+                                        android:layout_width="150dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal"
+                                        >
+
+                                        <RadioButton
+                                            android:id="@+id/selease_car_supply_activity_rg3"
+                                            android:layout_width="75dp"
+                                            android:layout_height="match_parent"
+
+                                            android:background="@drawable/button_back"
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:padding="4dp"
+                                            android:text="费用"
+                                            android:textColor="#fff"
+                                            android:textSize="16dp"/>
+
+                                        <RadioButton
+                                            android:id="@+id/selease_car_supply_activity_rg4"
+                                            android:layout_width="75dp"
+                                            android:layout_height="match_parent"
+
+                                            android:background="@drawable/button_back2"
+
+                                            android:button="@null"
+                                            android:gravity="center"
+                                            android:padding="4dp"
+
+                                            android:singleLine="true"
+
+                                            android:text="电话联系"
+                                            android:textColor="#0d52c9"
+                                            android:textSize="16dp"/>
+                                    </RadioGroup>
+
+                                    <LinearLayout
+                                        android:id="@+id/selease_car_supply_activity_linlay9"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <EditText
+                                            android:id="@+id/selease_car_supply_activity_et15"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:background="@null"
+                                            android:ellipsize="end"
+                                            android:hint="请填写价格"
+                                            android:inputType="number|numberDecimal"
+                                            android:padding="4dp"
+                                            android:singleLine="true"
+                                            android:textSize="18dp"/>
+
+
+                                        <TextView
+                                            android:layout_width="20dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_marginRight="10dp"
+                                            android:gravity="center"
+                                            android:text="元"
+                                            android:textSize="18dp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#eee"></View>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:hint="支付方式"
+                                        android:textColor="#fff"
+                                        android:textSize="18dp"/>
+
+                                    <RadioGroup
+                                        android:id="@+id/selease_car_supply_activity_RG4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="6dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <!--<RadioButton-->
+                                        <!--android:id="@+id/selease_car_supply_activity_rg7"-->
+
+                                        <!--android:layout_width="0dp"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_weight="1"-->
+
+                                        <!--android:text="在线支付"-->
+                                        <!--android:textSize="12sp"/>-->
+
+                                        <RadioButton
+                                            android:id="@+id/selease_car_supply_activity_rg8"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:checked="true"
+                                            android:text="现金到付"
+                                            android:textSize="12sp"/>
+
+                                        <!--<RadioButton-->
+                                        <!--android:id="@+id/selease_car_supply_activity_rg9"-->
+                                        <!--android:layout_width="0dp"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_weight="1"-->
+
+
+                                        <!--android:text="回单支付"-->
+                                        <!--android:textSize="12sp"/>-->
+                                    </RadioGroup>
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#eee"></View>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="6dp"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="需要发票"
+                                        android:textSize="18dp"/>
+
+                                    <RadioGroup
+                                        android:id="@+id/selease_car_supply_activity_RG3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="6dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <RadioButton
+                                            android:id="@+id/selease_car_supply_activity_rg5"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="是"
+                                            android:textSize="12sp"/>
+
+                                        <RadioButton
+                                            android:id="@+id/selease_car_supply_activity_rg6"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="否"
+                                            android:textSize="12sp"/>
+
+
+                                    </RadioGroup>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#9b9f9f"></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:id="@+id/selease_car_supply_activity_linlay7"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="填写联系人"
+                                    android:textSize="18dp"
+                                    android:id="@+id/textView8" />
+
+                                <ImageView
+                                    android:id="@+id/selease_car_supply_activity_iv5"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@mipmap/low"
+                                    />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/selease_car_supply_activity_linlay8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#fff"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="6dp"
+                                        android:text="发货人"
+                                        android:textSize="18dp"/>
+
+                                    <EditText
+
+                                        android:id="@+id/selease_car_supply_activity_et16"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:ellipsize="end"
+                                        android:hint="请输入发货人"
+                                        android:padding="6dp"
+                                        android:singleLine="true"
+                                        android:textSize="18dp"
+                                        />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#eee"></View>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="6dp"
+                                        android:text="联系电话"
+                                        android:textSize="18dp"/>
+
+                                    <EditText
+
+                                        android:id="@+id/selease_car_supply_activity_et17"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:ellipsize="end"
+                                        android:hint="请输入联系方式"
+
+                                        android:inputType="number"
+                                        android:padding="6dp"
+                                        android:focusable="false"
+                                        android:phoneNumber="true"
+                                        android:singleLine="true"
+                                        android:textSize="18dp"/>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#eee"></View>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:orientation="horizontal"
+                                    android:padding="6dp">
+
+                                    <TextView
+                                        android:layout_width="100dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center|left"
+                                        android:text="备注"
+                                        android:textSize="18dp"/>
+
+                                    <EditText
+                                        android:id="@+id/selease_car_supply_activity_et18"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="6dp"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:hint="如有其他说明请填写备注(限30字)"
+                                        android:maxLength="30"
+                                        android:padding="6dp"
+                                        android:textSize="18dp"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#9b9f9f"></View>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/selease_car_supply_activity_btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/submit_back"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="确认提交"
+                    android:textColor="#fff"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

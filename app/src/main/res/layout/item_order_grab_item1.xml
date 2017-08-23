@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:dividerPadding="1dp"
+    android:showDividers="middle|beginning|end"
+    android:divider="@drawable/divide"
+    android:paddingTop="@dimen/OrderItemTopPadding"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:padding="20px"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_pay_orderNum"
+            android:textSize="@dimen/txtSizeBig"
+            android:text="青岛移动互联科技有限公司"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/item_pay_go"
+        android:background="@color/colorWhite"
+        android:padding="20px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_pay_create_time"
+            android:textSize="@dimen/txtSize"
+            android:layout_margin="10px"
+            android:text="2017-05-16"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_pay_startPoint"
+            android:layout_toLeftOf="@id/item_pay_create_time"
+            android:textSize="@dimen/txtSize"
+            android:layout_toRightOf="@+id/icon2"
+            android:layout_margin="15px"
+            android:text="出发"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_pay_endPoint"
+            android:layout_toLeftOf="@id/item_pay_create_time"
+            android:textSize="@dimen/txtSize"
+            android:layout_toRightOf="@+id/icon2"
+            android:layout_below="@id/item_pay_startPoint"
+            android:layout_margin="15px"
+            android:text="结束"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_pay_orderMoney"
+            android:layout_toLeftOf="@id/item_pay_create_time"
+            android:textSize="@dimen/txtSize"
+            android:layout_toRightOf="@+id/icon2"
+            android:layout_below="@id/item_pay_endPoint"
+            android:layout_margin="15px"
+            android:text="联系电话：null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--右侧的图标-->
+        <ImageView
+            android:id="@+id/icon1"
+            android:src="@mipmap/circular"
+            android:scaleType="fitXY"
+            android:layout_alignTop="@id/item_pay_startPoint"
+            android:layout_width="@dimen/txtSize"
+            android:layout_height="@dimen/txtSize" />
+        <ImageView
+            android:id="@+id/icon2"
+            android:src="@mipmap/circle1"
+            android:scaleType="fitXY"
+            android:layout_alignTop="@id/item_pay_endPoint"
+            android:layout_width="@dimen/txtSize"
+            android:layout_height="@dimen/txtSize" />
+        <ImageView
+            android:visibility="gone"
+            android:rotation="90"
+            android:src="@mipmap/ellipsis"
+            android:layout_alignRight="@id/icon1"
+            android:layout_alignLeft="@id/icon1"
+            android:layout_below="@id/icon1"
+            android:layout_above="@id/icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/icon3"
+            android:src="@mipmap/call_phone"
+            android:layout_alignTop="@id/item_pay_orderMoney"
+            android:layout_width="@dimen/txtSize"
+            android:layout_height="@dimen/txtSize" />
+    </RelativeLayout>
+</LinearLayout>

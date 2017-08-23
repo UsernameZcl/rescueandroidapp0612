@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@mipmap/common_route"/>
+
+        <TextView
+            android:id="@+id/library_adapter_tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="我从哪里来，到哪里去"
+            android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@mipmap/goods"
+            android:id="@+id/imageView3"/>
+
+        <TextView
+            android:id="@+id/library_adapter_tv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="我从哪里来，到哪里去"
+            android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@mipmap/calendar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:text="入库时间:"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/library_adapter_tv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:text="2017-8-1"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@mipmap/count_down"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:text="预计储存:"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/library_adapter_tv4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:text="3-6个月"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="#e2d7d7"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/library_adapter_linlay1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/library_adapter_tv5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="选择仓库"
+            android:gravity="center"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:background="#e2dede"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></View>
+</LinearLayout>

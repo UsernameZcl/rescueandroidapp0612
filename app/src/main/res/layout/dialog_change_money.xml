@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt1"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:textSize="@dimen/actionTextSizeRight"
+        android:text="修改价格"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt2"
+        android:layout_below="@id/txt1"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:textSize="@dimen/actionTextSizeRight"
+        android:text="原始价格：电话联系"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_below="@id/txt2"
+        android:layout_toLeftOf="@+id/dialog_flag"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:paddingRight="20px"
+        android:gravity="center"
+        android:textSize="@dimen/actionTextSizeRight"
+        android:text="修改后价格："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/dialog_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/dialog_edit"
+        android:inputType="number"
+        android:gravity="center"
+        android:background="@drawable/my_order_spinner_bg"
+        android:layout_alignTop="@id/txt3"
+        android:layout_alignBottom="@id/txt3"
+        android:layout_toRightOf="@id/txt3"
+        android:layout_width="170px"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_toRightOf="@id/dialog_edit"
+        android:layout_alignTop="@id/txt3"
+        android:layout_alignBottom="@id/txt3"
+        android:padding="10px"
+        android:gravity="center"
+        android:textSize="@dimen/actionTextSizeRight"
+        android:text=" 元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#ab6900"
+        android:text="温馨提示：修改后需要承运方确认，价格只能修改三次"
+        android:layout_below="@id/dialog_edit"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:layout_width="560px"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

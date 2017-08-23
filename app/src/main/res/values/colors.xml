@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5716da</color>
+    <color name="colorPrimaryDark">#5716da</color>
+    <color name="colorAccent">#5716da</color>
+    <color name="transparent">#9000</color>
+<color name="white">#ffffffff</color>
+    <color name="btncolor_normal">#bab6b8</color>
+    <color name="color_323232">#323232</color>
+
+    <color name="banner">#5716da</color>
+
+    <!-- myorder我的订单界面参数 -->
+    <color name="colorFocusTrue">#00f</color>
+    <color name="colorFocusFalse">#505050</color>
+    <color name="normalBgColor">#f2f2ed</color>
+    <color name="normalLineColor">#b6b6b6</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGary">#818181</color>
+    <color name="colorWhite">#fff</color>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/normalBgColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="@dimen/actionHeight"
+        android:layout_width="match_parent"
+        android:background="@color/banner">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="订单"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:padding="@dimen/FragmentOrderItemPadding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.rescueandroid.utils.myorder.customView.MutilColorTextView
+                android:id="@+id/view1"
+                android:gravity="center"
+                app:divideString="\n"
+                app:color="@color/colorGary"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="330px"
+                android:layout_margin="@dimen/FragmentOrderItemPadding"
+                android:background="@drawable/my_order_spinner_bg"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawableRight="@mipmap/action_right"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="@dimen/OrderItemTopPadding"
+                android:text="我的订单\n货主/车主/库主订单"
+                android:textSize="@dimen/contentTextSize"
+                android:tag="我的订单" />
+
+            <com.rescueandroid.utils.myorder.customView.MutilColorTextView
+                android:id="@+id/view2"
+                android:gravity="center"
+                app:divideString="\n"
+                app:color="@color/colorGary"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="330px"
+                android:layout_margin="@dimen/FragmentOrderItemPadding"
+                android:background="@drawable/my_order_spinner_bg"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawableRight="@mipmap/action_right"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="@dimen/OrderItemTopPadding"
+                android:text="我的抢单\n货主车主抢单"
+                android:textSize="@dimen/contentTextSize"
+                android:tag="我的抢单"/>
+
+            <com.rescueandroid.utils.myorder.customView.MutilColorTextView
+                android:id="@+id/view3"
+                android:gravity="center"
+                app:divideString="\n"
+                app:color="@color/colorGary"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="330px"
+                android:layout_margin="@dimen/FragmentOrderItemPadding"
+                android:background="@drawable/my_order_spinner_bg"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawableRight="@mipmap/action_right"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="@dimen/OrderItemTopPadding"
+                android:text="接受订单\n选择路线/货源"
+                android:textSize="@dimen/contentTextSize"
+                android:tag="接受订单" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

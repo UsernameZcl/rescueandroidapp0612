@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_grab_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normalBgColor"
+    android:orientation="vertical"
+    tools:context=".Framgment.OrderFragment.activity.MyGrabOrderActivity">
+    <FrameLayout
+        android:id="@+id/order_detail_fl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionHeight"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/grab_order_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:padding="10dp"
+            android:src="@mipmap/left" />
+
+        <TextView
+            android:id="@+id/grab_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的抢单"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/grab_order_tab"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="100px"/>
+
+    <com.rescueandroid.utils.myorder.customView.MyViewPager
+        android:id="@+id/grab_order_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

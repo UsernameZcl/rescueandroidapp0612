@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 界面の参数 -->
+    <dimen name="actionHeight">50dp</dimen>
+    <dimen name="actionHeight2">112px</dimen>
+    <dimen name="itemHeight">100px</dimen>
+    <dimen name="actionTextSize">45px</dimen>
+    <dimen name="actionTextSizeRight">40px</dimen>
+    <dimen name="contentTextSize">36px</dimen>
+    <dimen name="spinnerHeight">120px</dimen>
+    <dimen name="spinnerMargin">30dp</dimen>
+    <dimen name="actionRight">10dp</dimen>
+    <dimen name="OrderItemTopPadding">25px</dimen>
+    <dimen name="FragmentOrderItemPadding">13px</dimen>
+    <dimen name="radius">10px</dimen>
+    <dimen name="stroke">0.5dp</dimen>
+    <dimen name="txtSizeSmall">26px</dimen>
+    <dimen name="txtSize">32px</dimen>
+    <dimen name="txtSizeBig">38px</dimen>
+    <dimen name="lineWidth">1px</dimen>
+    <dimen name="detail_padding">20px</dimen>
+</resources>

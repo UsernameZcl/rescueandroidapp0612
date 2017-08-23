@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+android:background="@drawable/dialog_back"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_width="320dp"
+              android:layout_height="140dp">
+
+
+   <TextView
+       android:textSize="20dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:textColor="#000"
+       android:text="删除信息将自动驳回抢单车主"
+       android:layout_width="match_parent"
+       android:layout_height="80dp"/>
+    <View
+        android:background="#ded5d5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"></View>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/submit"
+        android:text="确定"
+        android:textColor="#2124d9"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:layout_gravity="center"
+        android:background="#ded5d5"
+        android:layout_width="1dp"
+        android:layout_height="60dp"></View>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:text="取消"
+        android:textColor="#2124d9"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+
+
+
+</LinearLayout>

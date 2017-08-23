@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#ECECEC" >
+    </LinearLayout>
+
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/circle1"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:rotation="90"
+                android:layout_gravity="center"
+                android:src="@mipmap/ellipsis"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="2dp"
+                android:src="@mipmap/circle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/findroute_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="安徽省"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/findroute_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:text="安徽省"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/findroute_time"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/time"
+            android:gravity="center"
+            android:text="我是时间:"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/chexing"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="6dp"
+            android:text="常用车型："
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/findroute_cartype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#2d2d2d"
+            android:text="常用车型"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/chechang"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_marginLeft="6dp"
+            android:text="常用车型:"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/findroute_carline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:text="4.2"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/route_line_back"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="20dp"
+        android:layout_height="40dp">
+
+        <ImageView
+
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/customer_avatar"
+            android:layout_width="30dp"
+            android:layout_height="40dp"/>
+       <TextView
+           android:id="@+id/route_realease_name"
+           android:layout_marginLeft="10dp"
+           android:text="张臣立"
+           android:textSize="20sp"
+           android:layout_gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/route_realease_tel"
+            android:layout_marginLeft="6dp"
+            android:text="18353269340"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:maxLength="11"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="6dp"
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <LinearLayout
+            android:id="@+id/route_realease_activity_adapter_linlay1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="免费刷新"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:background="#eee"
+            android:layout_width="1dp"
+            android:layout_height="40dp"></View>
+        <LinearLayout
+            android:id="@+id/route_realease_delete"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/car_adapter_tv8"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="删除"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+
+</LinearLayout>

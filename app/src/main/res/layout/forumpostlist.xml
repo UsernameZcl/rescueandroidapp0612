@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+	
+	<LinearLayout 
+	    android:id="@+id/llayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#ffffff"
+	    android:orientation="vertical" 
+	    android:visibility="gone" >
+	    
+	    <TextView
+	        android:id="@+id/llayout_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:text="暂无数据信息！"
+	        android:textColor="#878787"
+	        android:textSize="14dp" />
+	    
+    </LinearLayout>
+    
+	<com.rescueandroid.view.XListView
+        android:id="@+id/xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:cacheColorHint="#C4C4C4"
+        android:divider="#cccccc"
+        android:scrollbars="none"
+        android:dividerHeight="1px"
+        >
+   	</com.rescueandroid.view.XListView>
+</LinearLayout>

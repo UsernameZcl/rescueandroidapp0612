@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/circle1"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:rotation="90"
+                android:layout_gravity="center"
+                android:src="@mipmap/ellipsis"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="2dp"
+                android:src="@mipmap/circle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/car_adapter_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:text="安徽省"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/car_adapter_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:text="安徽省"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/car_adapter_tv3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/time"
+            android:gravity="center"
+            android:text="我是时间:"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+
+            android:src="@mipmap/goods"/>
+
+        <TextView
+
+            android:id="@+id/car_adapter_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="4dp"
+            android:text="有的人睡着了，仿佛醒着，有的人醒着仿佛睡着了，世界这么大，总要去走走，多看看，了解外面的世界，来弥补内心的空虚，你觉得咋样啊？"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/calendar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:text="装车时间:"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/car_adapter_tv5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:text="2017-05-07"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:src="@mipmap/right_top"/>
+
+        <TextView
+            android:id="@+id/car_adapter_tv6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:text="2017-05-07"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/car_adapter_tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="价格电话联系"
+        android:textColor="#ec5706"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right"
+        android:padding="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/findroute_tel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded2"
+            android:textColor="@color/banner"
+            android:text="电话联系"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/findroute_route"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="确定路线"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/findroute_route2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded2"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/banner"
+            android:text="自有路线"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e4e0e0"></View>
+
+
+</LinearLayout>
